@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="author" content="Bogdanov D.D.">
+	<meta name="keywords" content="ипотечный калькулятор">
+	<meta name="description" content="Это ипотечный калькулятор, который рассчитывает ипотеку по аннуитетной схеме погашения">
+	<title>Ипотечный калькулятор</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Ипотечный калькулятор</h1>
+		<div class="forms">
+			<form class="form1" id="form1">
+				<h2>Расчёт ежемесячного платежа</h2>
+				<div class="">
+					<h3>Стоимость квартиры</h3>
+					<p><input type="text" id="sum1" class="" placeholder="Введите стоимость квартиры в рублях" required>
+					<h3>Период</h3>
+					<p><input type="text" id="period1" class="" placeholder="Введите срок кредита в годах" required>
+					<h3>Ставка</h3>
+					<p><input type="text" id="rate1" class="" placeholder="Введите ставку в процентах" required>
+				</div>
+				<button type="submit" class="btn btn-success" id="calc1">Рассчитать</button>
+			</form>
+			<form class="form2" id="form2">
+				<h2>Расчёт срока</h2>
+				<div class="">
+					<h3>Стоимость квартиры</h3>
+					<p><input type="text" id="sum2" class="" placeholder="Введите стоимость квартиры в рублях" required>
+					<h3>Ежемесячный платеж</h3>
+					<p><input type="text" id="payment2" class="" placeholder="Введите сумму ежемесячного платежа в рублях" required>
+					<h3>Ставка</h3>
+					<p><input type="text" id="rate2" class="" placeholder="Введите ставку в процентах" required>
+				</div>
+				<button type="submit" class="btn btn-success" id="calc2">Рассчитать</button>
+			</form>
+		</div>
+	</div>
+</body>
+	<script src="./js/main.js"></script>
+	<script src="./js/calc.js"></script>
+</html>
